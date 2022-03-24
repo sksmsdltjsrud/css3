@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test11.html</title>
+    <style>
+        body {
+            margin: 0px; /* 기본적으로 줘야함 */
+        }
+        header {
+            /* background-color: khaki; */
+            background-image: url(../../images/8.jpg);
+            height: 100px;
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(158, 223, 158);
+            height: 100px;
+        }
+        #layer1, #layer2, #layer3, #layer4, #layer5, #layer6 {
+            width: 200px;
+            height: 250px;
+        }
+        #layer1:hover, #layer2:hover, #layer3:hover, #layer4:hover, #layer5:hover, #layer6:hover {
+            background-color: rgb(182, 218, 55); /* 마우스 갖다대면 색 바뀜 */
+        }
+        #layer1 {
+            background-color: aqua;
+            float: left;
+            height: 600px;
+        }
+        #layer2 {
+            background-color: rgb(175, 88, 179);
+            float: left;
+            width: 700px;
+            height: 600px;
+        }
+        #layer3 {
+            background-color: rgb(160, 142, 209);
+            float: right;
+        }
+        #layer4 {
+            background-color: rgb(165, 131, 81);
+            height: 450px;
+            float: right;
+        }
+        #layer5 {
+            background-color: rgb(35, 124, 146);
+            float:left;
+            width: 550px;
+            height: 100px;
+        }
+        #layer6 {
+            background-color: rgb(95, 73, 224);
+            float:left;
+            width: 550px;
+            height: 100px;
+        }
+        footer {
+            clear:  both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <font size="6">레이아웃 작업</font>
+    </header>
+    <div id="content">
+        <div id="layer1">연습1</div>
+        <div id="layer2">연습2</div>
+        <div id="layer3">연습3</div>
+        <div id="layer4">연습4</div>
+        <div id="layer5">연습5</div>
+        <div id="layer6">연습6</div>
+    </div>
+    <footer>
+        <div>Footer(바닥글)</div>
+    </footer>
+</body>
+</html>
