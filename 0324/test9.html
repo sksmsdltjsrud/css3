@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test5.html</title>
+    <style>
+        /* input 태그 */
+        input[type=text] { /* text로 되어있는것만 바꿔줘 */
+            background-color: pink;
+            color: blue;
+            font-size: 1.5em;
+        }
+        input[type=password] { /* text로 되어있는것만 바꿔줘 */
+            background-color: red;
+            color: white;
+            font-size: 1.5em;
+        }
+        .btn {
+            cursor: pointer; /* 버튼에 마우스 올리면 손가락 보임 */
+        }
+        /* $= 같다면 */
+        img[src$="jpg"] {
+            border: 15px solid brown;
+            width: 400px;
+        }
+        #img1 {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>폼태그와 CSS</h2>
+    <form name="myform">
+        <p>
+            <label for="mid" class="tit" style="width:200px">아이디</label> :
+            <input type="text" name="mid" id="mid" autofocus required />
+        </p>
+        <p>
+            <label for="pwd" class="tit">비밀번호</label> :
+            <input type="password" name="pwd" id="pwd" required />
+        </p>
+        <p>
+            <label for="age" class="tit">나이</label> :
+            <input type="number" name="age" id="age" size="3" maxlength="3" />
+        </p>
+        <p>
+            <input type="submit" value="전송" class="btn" />
+            <input type="reset" value="다시입력" class="btn" />
+        </p>
+        <p><img src="../../images/7.jpg" /></p>
+        <p><img src="../../images/8.jpg" id="img1"/></p>
+    </form>
+</body>
+</html>
