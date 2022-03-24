@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test10.html</title>
+    <style>
+        h2{background-color: yellowgreen;}
+        div{
+            background-color: violet;
+            color: white;
+        }
+        span {
+            background-color: brown;
+        }
+        #contId2 {
+            background-color: yellow;
+            font-size: 20px;
+            color: black;
+        }
+        .cont2 {
+            font-size: 20px;
+        }
+        .content2 {
+            background-color: aqua;
+            color: black;
+        }
+        .cont22 {
+            background-color: red;
+            font-size: 20px;
+            color: rgb(236, 230, 230);
+        }
+    </style>
+</head>
+<body>
+    <h2>선택자(selector) 혼합응용 연습</h2>
+    <p>
+        - 선택자의 이름은 여러개를 가질 수 있음<br/>
+        - 클래스명과 아이디명을 동시에 가질수 있다.<br/>
+        - 클래스명은 하나의 태그안에 여러개를 가질 수 있다.<br/>
+        - 아이디명과 클래스명중 아이디명이 우선적으로 적용된다.<br/>
+        - 동일한 문장에 여러개의 클래스를 지정할 경우, 나중에 적용시킨 클래스가 우선적으로 적용된다.<br/>
+    </p>
+    <p>class선택자 : '.'으로 표시해준다.</p>
+    <p>클래스선택자는 본문에 1개 이상이 나올때 사용 한다.(여러번 사용 가능)</p>
+    <p>태그연습1</p>
+    <div>1.이곳은 div태그 영역입니다.</div>
+    <!-- <div style="background-color: rebeccapurple;">2.이곳은 div태그 영역입니다.</div> -->
+    <!-- <div id="contId2" style="background-color: red;">2.이곳은 div태그 영역입니다.</div> -->
+    <div id="contId2" class=cont2 content2;">2.이곳은 div태그 영역입니다.</div>
+    <!-- <div id="cont2">2.이곳은 div태그 영역입니다.</div> -->
+    <div class="cont2 content2">3.이곳은 div태그 영역입니다.</div>
+    11.이곳은 일반영역입니다.<br/>
+    12.이곳은 일반영역입니다.<br/>
+    <span>21.이곳은 span태그 영역입니다.</span>
+    <span class="cont22">22.이곳은 span태그 영역입니다.</span>
+    <span class="cont22">23.이곳은 span태그 영역입니다.</span>
+    13.이곳은 일반영역입니다.<br/>
+    <p>태그연습2</p>
+</body>
+</html>
