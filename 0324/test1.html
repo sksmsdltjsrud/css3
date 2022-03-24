@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test1.html</title>
+    <style>
+        /*
+            글자/배경색 색깔지정하기
+            예> color : rgb(red/green/blue)
+            {color : red}
+            {color : #ff0000}
+            {color : #f00}
+            {color : rgb(255, 0, 0)}
+            {color : rgba(255, 0, 0, 0)} <- alpha(불투명도)값은 0~1까지의 실수
+            {color : hsl(색상,채도(%),명도(%)} <-- 색상,채도,명도
+            {color : hsla(색상,채도(%),명도(%),불투명도} <-- 색상,채도,명도,불투명도
+        */
+        h1 {color: red;}
+        h2 {color: #f0f;}
+        p {color: rgb(12, 150, 150)}
+        #p2 {color: rgba(255, 0, 0, 0.3);}
+        #p3 {background-color: hsl(50, 60%, 70%);}
+        .korea {background-color: hsla(60, 50%, 50%, 0.5)}
+    </style>
 </head>
 <body>
     <h1>제목연습1</h1>
-    <h1>제목연습2</h1>
+    <h2>제목연습2</h2>
     <p>글자연습1</p>
-    <p>글자연습2</p>
-    <p>글자연습3</p>
-    <p>글자연습4</p>
+    <p id="p2">글자연습2</p>
+    <p id="p3">글자연습3</p>
+    <p id="p4">글자연습4</p>
     <p>글자연습5</p>
-    <div>
-        <p>애국가</p>
-        <div>
-            동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세
-            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세<br/>
+    <div id="wrap">
+        <p id="tit1">애국가</p>
+        <div id="content">
+            동해물과 <span id="mnt">백두산</span>이 마르고 닳도록 하느님이 보우하사 우리나라만세
+            무궁화 삼천리 화려강산 <span class="korea">대한사람</span> 대한으로 길이보전하세<br/>
             남산위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세
-            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세<br/>
+            무궁화 삼천리 화려강산 <span class="korea">대한사람</span> 대한으로 길이보전하세<br/>
             가을하늘 공활한데 높고구름없이 밝은 달은 우리 가슴 일편단심일세
-            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세<br/>
+            무궁화 삼천리 화려강산 <span class="korea">대한사람</span> 대한으로 길이보전하세<br/>
             이 기상과 이맘으로 충성을 다하며 괴로우나 즐거우나 나라 사랑하세
-            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세<br/>
+            무궁화 삼천리 화려강산 <span class="korea">대한사람</span> 대한으로 길이보전하세<br/>
         </div>
         <p>본문의 끝입니다.</p>
     </div>
