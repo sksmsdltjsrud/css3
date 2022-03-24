@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test4.html</title>
+    <style>
+        /*
+            a(a:link) : a태그 자체를 의미한다. - 화면에 보여주고 있는 상태를 의미
+            a:hover   : a태그(앵커태그)에 마우스가 올라가 있는 동안을 의미
+            a:active  : a태그를 누르고 있는 순간을 의미 
+        */
+        a {
+            color : blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: crimson;
+            text-decoration: underline;
+        }
+        a:active {
+            color: burlywood;
+        }
+        .ap:hover {
+            font-size: 20pt;
+            text-decoration: underline overline;
+        }
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>a 태그 속성변경</h2>
+    <p class="ap">a 태그(반응) 선택자</p>
+    <div>
+        <ul>
+            <li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+            <li><a href="http://www.imbc.com" target="_blank">MBC방송국</a></li>
+            <li><a href="test3.html" target="_blank">문서 : test.html</a></li>
+            <li><a href="../../images/1.jpg" target="_blank">그림보기</a></li>
+        </ul>
+    </div>
+</body>
+</html>

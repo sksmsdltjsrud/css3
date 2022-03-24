@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2.html</title>
+    <style>
+        /*
+            - 여러개의 선택자 구분(동등한 레벨) : ,
+                    아이디, 태그1, 태그2, 클래스명
+            - 자식 선택자 : >
+                    아이디(클래스/태그) > ol > li > ul > li
+            - 자손 선택자 : 공백
+                    아이디(클래스/태그) > ol  li  ul  li
+            - 자손 선택자 : 공백
+                    아이디(클래스/태그) > ul  li : 이렇게 두 개 있으면 두 개 있는거 다 해당됨
+            css는 순서가 중요하다
+        */
+
+        #content > ol > li > ul > li {
+            background-color: indianred;
+            color: white;
+        }
+        
+        ul li {
+            background-color: yellowgreen;
+            color: blue;
+        }
+        /* #content > ol > li { */
+        ol > li {
+            background-color: royalblue;
+            color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h2>길동이가 좋아하는 음식 Best5</h2>
+        <ol>
+            <li>짜장면</li>
+            <li>과자</li>
+            <li>
+                과일
+                <ul>
+                    <li>사과</li>
+                    <li>배</li>
+                    <li>바나나</li>
+                </ul>
+            </li>
+            <li>찐빵</li>
+            <li>피자</li>
+        </ol>
+    </div>
+    <p><br/></p>
+    <h2>길동이가 좋아하는 음식 5가지</h2>
+    <ul>
+        <li>짜장면</li>
+        <li>과자</li>
+        <li>
+            과일
+            <ol>
+                <li>사과</li>
+                <li>배</li>
+                <li>바나나</li>
+            </ol>
+        </li>
+        <li>찐빵</li>
+        <li>피자</li>
+    </ul>
+    <p><br/></p>
+    <h2>2.길동이가 좋아하는 음식 5가지</h2>
+    <ul>
+        <li>짜장면</li>
+        <li>과자</li>
+        <li>
+            과일
+            <ul>
+                <li>사과</li>
+                <li>배</li>
+                <li>바나나</li>
+            </ul>
+        </li>
+        <li>찐빵</li>
+        <li>피자</li>
+    </ul>
+</body>
+</html>

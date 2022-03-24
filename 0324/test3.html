@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2.html</title>
+    <style>
+        /*
+            - 여러개의 선택자 구분(동등한 레벨) : ,
+                    아이디, 태그1, 태그2, 클래스명
+        */
+        ul, ol {
+            background-color: yellowgreen;
+            color: blue;
+        }
+        .fruit {color: red;}
+        #banana {background-color: yellow;}
+        
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h2>길동이가 좋아하는 음식 Best5</h2>
+        <ol>
+            <li>짜장면</li>
+            <li>과자</li>
+            <li>
+                과일
+                <ul class="fruit">
+                    <li>사과</li>
+                    <li>배</li>
+                    <li id="banana">바나나</li>
+                </ul>
+            </li>
+            <li>찐빵</li>
+            <li>피자</li>
+        </ol>
+    </div>
+    <p><br/></p>
+    <h2>길동이가 좋아하는 음식 5가지</h2>
+    <ul>
+        <li>짜장면</li>
+        <li>과자</li>
+        <li>
+            과일
+            <ol class="fruit">
+                <li>사과</li>
+                <li>배</li>
+                <li>바나나</li>
+            </ol>
+        </li>
+        <li>찐빵</li>
+        <li>피자</li>
+    </ul>
+    <p><br/></p>
+    <h2>2.길동이가 좋아하는 음식 5가지</h2>
+    <ul>
+        <li>짜장면</li>
+        <li>과자</li>
+        <li>
+            과일
+            <ul class="fruit">
+                <li>사과</li>
+                <li>배</li>
+                <li>바나나</li>
+            </ul>
+        </li>
+        <li>찐빵</li>
+        <li>피자</li>
+    </ul>
+</body>
+</html>
